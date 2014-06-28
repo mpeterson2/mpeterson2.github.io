@@ -1,0 +1,47 @@
+@import "color-palette.less";
+
+#links {
+  padding: 50px 0 25px 0;
+
+  .col-xs-1 {
+    margin-right: 58px;
+    margin-bottom: 25px;
+  }
+
+  #say-hi {
+    font-size: 3em;
+
+    b {
+      color: @c-accent;
+    }
+
+  }
+
+  #link-buttons {
+    padding-top: 25px;
+
+    .link-wrapper {
+      margin-right: 25px;
+      background-color: @c-neutral;
+
+      a {
+        font-size: 3em;
+        color: @c-dark;
+
+        img {
+          padding: 25px;
+          background-color: @c-neutral;
+          height: 95px;
+          width: 95px;
+        }
+      }
+
+      a:hover {
+        //color: @c-accent-dark;
+        img {
+          background-color: @c-neutral-dark;
+        }
+      }
+    }
+  }
+}

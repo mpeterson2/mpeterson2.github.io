@@ -1,7 +1,25 @@
+@import "color-palette.less";
 
 #projects {
-  margin-top: 0px;
-  color: white;
-  height: 200px;
-  background-color: black;
+  padding: 50px 0 50px 0;
+  color: @c-dark;
+  //height: 200px;
+  background-color: @c-neutral;
+  text-align: center;
+
+  img {
+    height: 50px;
+  }
+
+  .heading {
+    font-weight: bold;
+  }
+
+  a {
+    color: @c-accent;
+  }
+
+  a:hover {
+    color: @c-accent-dark;
+  }
 }
