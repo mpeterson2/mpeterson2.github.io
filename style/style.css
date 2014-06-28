@@ -130,14 +130,19 @@ a {
   color: #14799e;
 }
 #links {
-  padding: 50px 0 25px 0;
+  background-color: #3f4245;
+  z-index: -1;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
-#links .col-xs-1 {
+#links .col-sm-1 {
   margin-right: 58px;
   margin-bottom: 25px;
 }
 #links #say-hi {
   font-size: 3em;
+  color: rgba(255, 255, 255, 0.9);
 }
 #links #say-hi b {
   color: #33b5e5;
@@ -147,24 +152,24 @@ a {
 }
 #links #link-buttons .link-wrapper {
   margin-right: 25px;
-  background-color: #e5e5e5;
 }
 #links #link-buttons .link-wrapper a {
   font-size: 3em;
   color: #26252b;
 }
 #links #link-buttons .link-wrapper a img {
+  border-radius: 5px;
   padding: 25px;
-  background-color: #e5e5e5;
+  background-color: #222222;
   height: 95px;
   width: 95px;
 }
 #links #link-buttons .link-wrapper a:hover img {
-  background-color: #cccccc;
+  background-color: #0e0f10;
 }
 body {
+  background-color: #3f4245;
   margin: none;
-  height: 100%;
   width: 100%;
   font-family: "Open Sans";
 }

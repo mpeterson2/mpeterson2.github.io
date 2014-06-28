@@ -1,15 +1,20 @@
 @import "color-palette.less";
 
 #links {
-  padding: 50px 0 25px 0;
+  background-color: @c-neutral-dark;
+  z-index: -1;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 
-  .col-xs-1 {
+  .col-sm-1 {
     margin-right: 58px;
     margin-bottom: 25px;
   }
 
   #say-hi {
     font-size: 3em;
+    color: @c-lighter;
 
     b {
       color: @c-accent;
@@ -22,24 +27,23 @@
 
     .link-wrapper {
       margin-right: 25px;
-      background-color: @c-neutral;
 
       a {
         font-size: 3em;
         color: @c-dark;
 
         img {
+          border-radius: 5px;
           padding: 25px;
-          background-color: @c-neutral;
+          background-color: @c-neutral-darkest;
           height: 95px;
           width: 95px;
         }
       }
 
       a:hover {
-        //color: @c-accent-dark;
         img {
-          background-color: @c-neutral-dark;
+          background-color: @c-neutral-darker;
         }
       }
     }
