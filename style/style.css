@@ -144,7 +144,7 @@ a {
   font-size: 3em;
   color: rgba(255, 255, 255, 0.9);
 }
-#links #say-hi b {
+#links #say-hi strong {
   color: #33b5e5;
 }
 #links #link-buttons {
