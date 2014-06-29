@@ -3,3 +3,9 @@
   -moz-box-shadow:    inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
   box-shadow:         inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
 }
+
+.shadow (@x: 0, @y: 10px, @blur: 25px, @spread: 0, @alpha: 0.5) {
+  -webkit-box-shadow: @x @y @blur @spread rgba(0, 0, 0, @alpha);
+  -moz-box-shadow:    @x @y @blur @spread rgba(0, 0, 0, @alpha);
+  box-shadow:         @x @y @blur @spread rgba(0, 0, 0, @alpha);
+}
