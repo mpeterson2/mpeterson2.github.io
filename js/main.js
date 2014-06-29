@@ -7,6 +7,6 @@ $(document).ready(function() {
 
 function onResize() {
   var bHeight = $("body").height();
-  var lHeight = $("#links").height() + 50;
+  var lHeight = $("#links").height();
   $("html").css("height", "calc(" + bHeight + "px + " + lHeight + "px)");
 }
