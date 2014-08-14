@@ -103,6 +103,14 @@
   background-color: transparent;
   text-align: center;
 }
+#projects .jumbotron img.logo {
+  display: inline;
+  max-height: 70px;
+  margin-top: -30px;
+}
+#projects .jumbotron h1 {
+  display: inline;
+}
 #projects #more-projects {
   margin-top: 50px;
 }
