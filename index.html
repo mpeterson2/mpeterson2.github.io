@@ -1,125 +1,30 @@
 <html>
-<head>
-  <title>Michael Peterson</title>
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <title>Michael Peterson</title>
+    <script src="bower_components/platform/platform.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-  <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  
-  <link rel="stylesheet" href="style/style.css">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Open Sans";
+      }
+    </style>
 
-  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-  <script src="js/google-analytics.js"></script>
-  <script src="js/main.js"></script>
+    <link rel="import" href="elements/header.html">
+    <link rel="import" href="elements/welcome.html">
+    <link rel="import" href="elements/projects.html">
+    <link rel="import" href="elements/footer.html">
 
-</head>
-<body>
-  <div class="navbar" role="navigation">
-    <div class="container">
-      
-      <div class="navbar-header">
-        <a href="index.html"><img src="img/avatar.jpg"></a>
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
+  </head>
+  <body>
+    <m-header>
+        <m-welcome class="standalone"></m-welcome>
+        <m-projects class="content"></m-projects>
+      <m-footer></m-footer>
+    </m-header>
 
-      <div class="collapse navbar-collapse">
-        <div class="nav navbar-nav">
-            <a href="https://github.com/mpeterson2">GitHub</a>
-            <a href="projects.html">Projects</a>
-            <a href="resume.pdf">Resume</a>
-            <a href="https://www.linkedin.com/pub/michael-peterson/84/247/57a">LinkedIn</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="welcome">
-    <div class="container" id="welcome">
-      <div id="greeting">Hello,</div>
-
-      <div id="main-about-me">
-        I'm <strong>Michael Peterson</strong>, a senior studying <strong>Computer Science</strong> at <strong>Carthage College</strong>.
-      </div>
-
-      <p id="about-me"></p>
-    </div>
-  </div>
-
-  <div id="projects">
-    <div class="container marketing">
-      <div class="row">
-
-        <div class="col-lg-4">
-          <img src="img/projects/turbo-wookie.png">
-          <h2 class="heading">
-            Turbo Wookie
-          </h2>
-          <p>
-            Turbo Wookie is a collaborative music jukebox. A group of people can start up a Turbo Wookie instance, share the address, then build and listen to a playlist together. Turbo Wookie is written in Go for the backend with Dart as the frontend. If you are wondering about the name, GitHub suggested it when we created the repository, and we took it.
-          </p>
-          <a class="learn-more" href="http://turbowookie.github.io/">Learn more</a>
-        </div>
-
-        <div class="col-lg-4">
-          <img src="img/projects/java-http-server.png">
-          <h2 class="heading">
-            java-http-server
-          </h2>
-          <p>
-            java-httpserver is pretty much what it sounds like, a HTTP server written in java. Our goal was to create an easy to use API for Java developers trying to create a server with a RESTful API.
-          </p>
-          <a class="learn-more" href="http://dkuntz2.github.io/java-httpserver/">Learn more</a>
-        </div>
-
-        <div class="col-lg-4">
-          <img src="img/projects/squatch-sighter.png">
-          <h2 class="heading">
-            squatch-sighter
-          </h2>
-          <p>
-            squatch-sighter is a map where anybody can report a Sasquatch sighting. That's about it. So if you see a Sasquatch, be sure to report it. It was written for a class assignment where we had to use Ruby Sinatra to build a slightly complex web app. The app is deployed on heroku - <a href="http://squatch-sighter.herokuapp.com/">squatch-sighter.herokuapp.com</a>, if you are interested in seeing it in action.
-          </p>
-          <a class="learn-more" href="https://github.com/mpeterson2/squatch-sighter">Learn more</a>
-        </div>
-
-        <a id="more-projects" href="projects.html" class="btn btn-dull btn-medium"><i class="glyphicon glyphicon-folder-open spacer"></i>More Projects</a>
-      </div>
-    </div>
-  </div>
-
-  <div id="links">
-    <div class="container">
-      <div id="say-hi">Say <strong>Hello</strong></div>
-
-      <div id="link-buttons" class="row">
-
-        <div class="col-sm-1">
-          <div class="link-wrapper">
-            <a href="mailto:mpeterson4@carthage.edu">
-              <img src="img/links/email.svg">
-            </a>
-          </div>
-        </div>
-
-        <div class="col-sm-1">
-          <div class="link-wrapper">
-            <a href="https://github.com/mpeterson2">
-              <img src="img/links/github.png">
-            </a>
-          </div>        
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-</body>
+    <script src="js/google-analytics.js"></script>
+  </body>
 </html>
-

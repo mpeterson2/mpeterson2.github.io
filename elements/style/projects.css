@@ -1,0 +1,30 @@
+.container {
+  width: 750px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
+m-card {
+  margin-top: 50px;
+}
+m-card a {
+  text-decoration: none;
+  color: #26252b;
+}
+m-card a:hover paper-icon-button {
+  background: #f2f2f2;
+}
+m-card div {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  text-align: center;
+}
+m-card div * {
+  margin-right: 40px;
+}

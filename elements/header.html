@@ -1,0 +1,23 @@
+<link rel='import' href='../bower_components/polymer/polymer.html'>
+<link rel='import' href='../bower_components/core-toolbar/core-toolbar.html'>
+<link rel='import' href='../bower_components/core-header-panel/core-header-panel.html'>
+
+<polymer-element name="m-header" noscript>
+	
+	<template>
+		<link rel="stylesheet" href="style/header.css">
+		<core-header-panel mode='scroll'>
+			<core-toolbar>
+				<img src="img/avatar.jpg">
+				<span flex></span>
+	            <a href="https://github.com/mpeterson2">GitHub</a>
+	            <a href="../resume.pdf">Resume</a>
+	            <a href="https://www.linkedin.com/pub/michael-peterson/84/247/57a">LinkedIn</a>
+			</core-toolbar>
+			<content select=".standalone"></content>
+			<div><content select=".content"></content></div>
+			<content select="m-footer"></content>
+		</core-header-panel>
+	</template>
+
+</polymer-element>

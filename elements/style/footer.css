@@ -1,0 +1,32 @@
+.container {
+  width: 750px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
+:host {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #e5e5e5;
+}
+div {
+  width: 100%;
+  padding: 0 25px 0 25px;
+  background-color: #e5e5e5;
+}
+div a {
+  margin-right: 25px;
+  text-decoration: none;
+  color: #26252b;
+}
+div a:hover paper-icon-button {
+  background-color: #f2f2f2;
+}
