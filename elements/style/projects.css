@@ -25,6 +25,6 @@ m-card div {
   width: 100%;
   text-align: center;
 }
-m-card div * {
+m-card div a {
   margin-right: 40px;
 }
