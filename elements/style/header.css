@@ -14,8 +14,13 @@ core-header-panel {
 }
 core-header-panel core-toolbar {
   height: 100px;
-  padding: 10px 15% 0;
   background: #33b5e5;
+}
+core-header-panel core-toolbar .indent-left {
+  margin-left: 15% !important;
+}
+core-header-panel core-toolbar .indent-right {
+  margin-right: 15%;
 }
 core-header-panel core-toolbar img {
   margin-top: 10px !important;

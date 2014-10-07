@@ -9,8 +9,15 @@ core-header-panel {
 		@side-padding: @padding-header-sides;
 
 		height: @size;
-		padding: @top-padding @side-padding 0;
 		background: @c-accent;
+
+		.indent-left {
+			margin-left: @side-padding !important;
+		}
+
+		.indent-right {
+			margin-right: @side-padding;
+		}
 
 		img {
 			margin-top: @top-padding !important;
