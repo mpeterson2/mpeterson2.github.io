@@ -9,8 +9,16 @@
 .left {
   float: left;
 }
+:host {
+  flex-wrap: wrap;
+  display: flex;
+}
 m-card {
   margin-top: 50px;
+  display: inline-block;
+  min-width: 500px;
+  max-width: 40%;
+  margin: 10px;
 }
 m-card a {
   text-decoration: none;
