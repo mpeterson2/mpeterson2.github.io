@@ -14,15 +14,15 @@ core-header-panel {
 }
 core-header-panel core-toolbar {
   height: 100px;
-  padding: 10px 15% 0 15%;
+  padding: 10px 15% 0;
   background: #33b5e5;
-  margin-bottom: 0;
 }
 core-header-panel core-toolbar img {
   margin-top: 10px !important;
   height: 80px;
   width: 80px;
   border-radius: 100%;
+  z-index: 10;
 }
 core-header-panel core-toolbar a {
   font-weight: bold;
@@ -34,7 +34,7 @@ core-header-panel core-toolbar a:hover {
   text-decoration: underline;
   color: #ffffff;
 }
-core-header-panel div {
-  margin: 25px auto 25px auto;
-  width: 70%;
+core-header-panel div#header-content {
+  margin: 25px auto;
+  width: 75%;
 }

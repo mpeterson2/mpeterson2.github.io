@@ -17,16 +17,16 @@
   margin-right: auto;
   background-color: #e5e5e5;
 }
-div {
+div#footer {
   width: 100%;
   padding: 0 25px 0 25px;
   background-color: #e5e5e5;
 }
-div a {
+div#footer a {
   margin-right: 25px;
   text-decoration: none;
   color: #26252b;
 }
-div a:hover paper-icon-button {
+div#footer a:hover paper-icon-button {
   background-color: #f2f2f2;
 }
