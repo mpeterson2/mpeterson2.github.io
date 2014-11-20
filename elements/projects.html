@@ -3,13 +3,13 @@
 <link rel="import" href="card.html">
 
 <polymer-element name="m-projects" noscript>
-	
+
 	<template>
 		<link rel="stylesheet" href="style/projects.css">
 
 		<m-card>
 			<h1>Turbo Wookie</h1>
-			
+
 			<p>Turbo Wookie is a collaborative music jukebox. A group of people can start up a Turbo Wookie instance, share the address, then build and listen to a playlist together. Turbo Wookie is written in Go for the backend with Dart as the frontend. If you are wondering about the name, GitHub suggested it when we created the repository, and we took it.</p>
 
 			<div>
@@ -27,7 +27,7 @@
 			</div>
 
 			<p>Although I haven't kept it up to date, I also made a full Dart version to learn how server side Dart development was like.</p>
-			
+
 			<div>
 				<a href="https://github.com/mpeterson2/turbo-wookie">
 					<paper-icon-button
@@ -41,10 +41,10 @@
 
 		<m-card>
 			<h1>Pdf Reviewer</h1>
-			
+
 			<p>Pdf Reviewer was one project I created with the Developer Liberation Front at North Carolina State University over the summer of 2014. It is a webapp designed to help peers review each other's papers, using GitHub's issue tracker. The writer of the paper can request someone to be a review on the paper, which will then tell the reviewer that they have been requested to be a reviewer. They can download the paper, and add comments using a simple domain specific language to add labels and link it to already existing issues if they choose to. They can then upload the review back to the web app, and it generate GitHub issues with the reviewer's labels, and issues. After this process, the writer can look at the issues, and either fix them, or ignore them</p>
 			<p>As for the technical details, Pdf Reviewer runs on App Engine, using Java as a back and JavaScript as a frontend. It uses the GitHub api in order to create issues, search for the user's repositories, grab users (to suggest reviewers) and more.</p>
-			
+
 			<div>
 				<a href="https://pdfreviewhub.appspot.com">
 					<paper-icon-button
@@ -62,7 +62,7 @@
 
 		<m-card>
 			<h1>java-httpserver</h1>
-			
+
 			<p>java-httpserver is pretty much what it sounds like, a HTTP server written in Java. Our goal was to create an easy to use API for Java developers trying to create a server with a RESTful API.</p>
 
 			<div>
@@ -106,7 +106,7 @@
 			<h1>squatch-sighter</h1>
 
 			<p>squatch-sighter is a map where anybody can report a Sasquatch sighting. That's about it. So if you see a Sasquatch, be sure to report it. It was written for a class assignment where we had to use Ruby Sinatra to build a slightly complex web app. The app is deployed on Heroku if you are interested in seeing it in action.</p>
-			
+
 			<div>
 				<a href="http://squatch-sighter.herokuapp.com/">
 					<paper-icon-button
@@ -160,6 +160,8 @@
 			</div>
 
 		</m-card>
+
+		<m-card class="last"></m-card>
 
 	</template>
 

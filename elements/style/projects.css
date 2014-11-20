@@ -23,6 +23,10 @@ m-card {
   margin: 10px;
   max-width: 500px;
 }
+m-card.last {
+  visibility: hidden;
+  width: 500px;
+}
 m-card h1 {
   text-align: center;
 }
