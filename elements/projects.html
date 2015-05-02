@@ -8,6 +8,29 @@
 		<link rel="stylesheet" href="style/projects.css">
 
 		<m-card>
+			<h1>Kanban</h1>
+			<p>Kanban is my senior thesis project at Carthage College. It is a single page web app written with the MEAN stack, meant for agile developers (or anyone really) who want to create an electronic Kanban board. It is meant to be user friendly and simple. You can create a <em>board</em> and place <em>stories</em> on it in different columns, by dragging and dropping, to represent the state of the story. Then, <em>tasks</em> can be added to these stories.</p>
+
+			<p>There is also the idea of <em>sprints</em>. Each sprint runs for a specified amount of time, and then a user can create a new sprint to clear the board and start over, while keeping the older sprints. If a user wants to carry their unfinished stories over to the next sprint, there is also an option for that.</p>
+
+			<p>Once a user has started a board, they may want to share it. Kanban allows them to add other users to the boards, and then those users can also collaborate on it and be assigned to certain stories they may be working in.</p>
+
+			<div>
+				<a href="http://kanban-boards.herokuapp.com">
+					<paper-icon-button
+						icon="open-in-browser" label="Live">
+					</paper-icon-button>
+				</a>
+
+				<a href="https://github.com/mpeterson2/kanban">
+					<paper-icon-button
+					iconSrc="elements/img/github.png" label="GitHub">
+					</paper-icon-button>
+				</a>
+			</div>
+		</m-card>
+
+		<m-card>
 			<h1>Turbo Wookie</h1>
 
 			<p>Turbo Wookie is a collaborative music jukebox. A group of people can start up a Turbo Wookie instance, share the address, then build and listen to a playlist together. Turbo Wookie is written in Go for the backend with Dart as the frontend. If you are wondering about the name, GitHub suggested it when we created the repository, and we took it.</p>
@@ -85,6 +108,7 @@
 			<h1>Save Session</h1>
 			<p>Save Session is a package for the Atom text editor. It is designed to restore your previous session in Atom by restoring file contents (whether or not they were saved to disk), the cursor position in each file, window size and position, and the last open project. The package is highly configurable, allowing you to choose what you want to be restored and what default Atom behaviors should be suppressed (such as the save prompt on exit).</p>
 			<p>I wrote this package because I wanted to try out the Atom editor, and immediately, I was disappointed that it didn't have this feature. So, I decided to learn some CoffeeScript and the Atom API to try out the text editor.</p>
+			<p>This package has now be deprecated as the Atom team has started adding these features to the core of Atom.</p>
 
 			<div>
 				<a href="https://atom.io/packages/save-session">
