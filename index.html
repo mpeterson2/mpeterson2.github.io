@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Michael Peterson</title>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="/bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="/bower_components/marked/lib/marked.js"></script>
+    <script src="/bower_components/angular-marked/angular-marked.js"></script>
+
+  </head>
+  <body ng-app="app" ng-controller="main">
+
+    <nav class="navbar navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" ng-click="navbar.collapsed = !navbar.collapsed">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a><img src="img/avatar.jpg"></a>
+        </div>
+        <div class="navbar-collapse collapse" collapse="!navbar.collapsed">
+
+          <!-- Left nav -->
+          <ul class="nav navbar-nav">
+          </ul>
+
+          <!-- Right nav -->
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://github.com/mpeterson2">GitHub</a></li>
+            <li><a href="/resume">Resume</a></li>
+            <li><a href="https://www.linkedin.com/pub/michael-peterson/84/247/57a">LinkedIn</a></li>
+            <li><a href="mailto:mpeterson4@carthage.edu">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="bg-accent">
+      <div class="container">
+        <h1 class="welcome">
+          Hello,
+        </h1>
+        <p class="who-am-i">
+          I'm Michael Peterson, a senior studying computer science at Carthage College.
+        </p>
+        <p class="look-at-projects">
+          Have a look at some of my projects.
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div ng-repeat-start="project in projects"></div>
+
+        <div class="card col-xs-12 col-md-5">
+          <h1>{{project.name}}</h1>
+
+          <p ng-repeat="description in project.descriptions" marked="description"></p>
+
+          <div class="links">
+            <a ng-repeat="link in project.links" href="{{link.href}}">
+              {{link.text}}
+            </a>
+          </div>
+
+          <p ng-repeat="description in project.nextDescriptions" marked="description"></p>
+
+          <div class="links">
+            <a ng-repeat="link in project.nextLinks" href="{{link.href}}">
+              {{link.text}}
+            </a>
+          </div>
+
+        </div>
+
+        <div class="clearfix" ng-if="$odd"></div>
+        <div ng-repeat-end="project in projects"></div>
+      </div>
+    </div>
+
+    <script src="scripts/google-analytics.js"></script>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+@import '../bower_components/bootstrap/less/bootstrap';
+
+@size-navbar: 100px;
+@padding-navbar: 10px;
+
+@color-accent: #33b5e5;
+@color-accent-text: rgba(255, 255, 255, 0.9);
+@color-accent-text-light: white;
+@color-flat: #e5e5e5;
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+  background: @color-accent;
+
+  &.navbar {
+    margin-bottom: 0;
+  }
+
+  ul.nav.navbar-nav {
+    a {
+      color: @color-accent-text;
+      background: transparent;
+
+      &:hover {
+        color: @color-accent-text-light;
+      }
+    }
+  }
+
+  img {
+    height: @size-navbar - (2 * @padding-navbar);
+    border-radius: 50%;
+    margin-top: @padding-navbar;
+  }
+
+  .icon-bar {
+    background: white;
+  }
+
+  .navbar-toggle.collapsed {
+    height: @size-navbar;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  @media(min-width: @screen-md-min) {
+    .navbar-brand,
+    .navbar-nav li a {
+        line-height: @size-navbar;
+        height: @size-navbar;
+        padding-top: 0;
+        font-size: 1.3em;
+    }
+  }
+}
+
+
+.bg-accent {
+  background: @color-accent;
+  color: @color-accent-text;
+}
+
+.welcome {
+  font-size: 3em;
+}
+
+.who-am-i {
+  font-size: 2em;
+}
+
+.look-at-projects {
+  font-size: 1.5em;
+}
+
+.card {
+  margin-top: 10px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  padding: 0 25px 25px 25px;
+  text-align: justify;
+
+  @media(min-width: @screen-md-min) {
+    &.col-md-5 {
+      width: 45%;
+      margin-right: 5%;
+    }
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .links {
+    text-align: center;
+    height: 30px;
+
+    a {
+      padding: 10px;
+      color: black;
+      text-transform: uppercase;
+      border-radius: 3px;
+
+      &:hover {
+        background: darken(white, 10%);
+        text-decoration: none;
+      }
+    }
+  }
+}
