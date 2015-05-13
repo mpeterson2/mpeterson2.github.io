@@ -1,4 +1,4 @@
-angular.module('app', ['ui.bootstrap', 'hc.marked'])
+angular.module('app', ['ui.bootstrap', 'hc.marked', 'akoenig.deckgrid'])
 
 .controller('main', function($scope) {
   $scope.projects = [

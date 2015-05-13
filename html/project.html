@@ -1,0 +1,20 @@
+<div class="card">
+  <h1>{{card.name}}</h1>
+
+  <p ng-repeat="description in card.descriptions" marked="description"></p>
+
+  <div class="links">
+    <a ng-repeat="link in card.links" href="{{link.href}}">
+      {{link.text}}
+    </a>
+  </div>
+
+  <p ng-repeat="description in card.nextDescriptions" marked="description"></p>
+
+  <div class="links">
+    <a ng-repeat="link in card.nextLinks" href="{{link.href}}">
+      {{link.text}}
+    </a>
+  </div>
+
+</div>
