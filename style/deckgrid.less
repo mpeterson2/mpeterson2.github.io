@@ -9,13 +9,23 @@
     width: 33%;
 }
 
-@media(max-width: @screen-md-min) {
+@media(max-width: @screen-lg-min) {
     .deckgrid .column {
         width: 50%;
     }
 
     .deckgrid[deckgrid]::before {
         content: '2 .column.size-1-2';
+    }
+}
+
+@media(max-width: @screen-md-min) {
+    .deckgrid .column {
+        width: 100%;
+    }
+
+    .deckgrid[deckgrid]::before {
+        content: '1 .column.size-1-1';
     }
 }
 
