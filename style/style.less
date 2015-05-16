@@ -4,13 +4,16 @@
 @size-navbar: 100px;
 @padding-navbar: 10px;
 
+@color-bg: rgba(0, 0, 0, .04);
 @color-accent: #33b5e5;
 @color-accent-text: rgba(255, 255, 255, 0.9);
 @color-accent-text-light: white;
 @color-flat: #e5e5e5;
+@color-white: white;
 
 body {
   font-family: 'Open Sans', sans-serif;
+  background: @color-bg;
 }
 
 nav {
@@ -64,6 +67,7 @@ nav {
 .bg-accent {
   background: @color-accent;
   color: @color-accent-text;
+  margin-bottom: 10px;
 }
 
 .welcome {
@@ -79,8 +83,10 @@ nav {
 }
 
 .card {
-  margin-top: 10px;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  background: @color-white;
+  margin: 0 10px 10px 0;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
   padding: 0 25px 25px 25px;
   text-align: justify;
 
