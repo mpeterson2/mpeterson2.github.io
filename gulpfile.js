@@ -3,7 +3,7 @@ var less = require('gulp-less');
 var minifyCSS = require('gulp-minify-css');
 var server = require('gulp-server-livereload');;
 
-gulp.task('default', ['build']);
+gulp.task('default', ['dev']);
 
 gulp.task('build', ['less']);
 
