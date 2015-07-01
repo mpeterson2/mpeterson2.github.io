@@ -57,10 +57,10 @@ angular.module('app', ['ui.bootstrap', 'hc.marked', 'akoenig.deckgrid'])
       ],
       links: [{
           text: 'Website',
-          href: 'https://github.com/storytellersoftware/java-httpserver'
+          href: 'http://dkuntz2.github.io/java-httpserver/'
         }, {
           text: 'GitHub',
-          href: 'https://github.com/dkuntz2/java-httpserver'
+          href: 'https://github.com/storytellersoftware/java-httpserver'
         }]
     },
 
